@@ -12,7 +12,7 @@ require 'statsd'
 
 module RubyGettingStarted
   class Application < Rails::Application
-    config.trashed.statsd = Statsd.new('localhost', ENV["PORT"]) if ENV["PORT"]
+    #config.trashed.statsd = Statsd.new('localhost', ENV["PORT"]) if ENV["PORT"]
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
