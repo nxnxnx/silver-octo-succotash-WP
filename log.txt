@@ -1,0 +1,101 @@
+2017-07-25T03:30:10.281011+00:00 app[web.1]:   /app/config/environment.rb:2:in `require'
+2017-07-25T03:30:10.281011+00:00 app[web.1]:   /app/config/environment.rb:2:in `<top (required)>'
+2017-07-25T03:30:10.281013+00:00 app[web.1]:   config.ru:3:in `block in <main>'
+2017-07-25T03:30:10.281012+00:00 app[web.1]:   config.ru:3:in `require'
+2017-07-25T03:30:10.281014+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/rack-1.6.5/lib/rack/builder.rb:55:in `instance_eval'
+2017-07-25T03:30:10.281014+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/rack-1.6.5/lib/rack/builder.rb:55:in `initialize'
+2017-07-25T03:30:10.281015+00:00 app[web.1]:   config.ru:in `new'
+2017-07-25T03:30:10.281016+00:00 app[web.1]:   config.ru:in `<main>'
+2017-07-25T03:30:10.281016+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/rack-1.6.5/lib/rack/builder.rb:49:in `eval'
+2017-07-25T03:30:10.281017+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/rack-1.6.5/lib/rack/builder.rb:49:in `new_from_string'
+2017-07-25T03:30:10.281017+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/rack-1.6.5/lib/rack/builder.rb:40:in `parse_file'
+2017-07-25T03:30:10.281018+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/puma-3.8.2/lib/puma/configuration.rb:313:in `load_rackup'
+2017-07-25T03:30:10.281019+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/puma-3.8.2/lib/puma/configuration.rb:242:in `app'
+2017-07-25T03:30:10.281019+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/puma-3.8.2/lib/puma/runner.rb:138:in `load_and_bind'
+2017-07-25T03:30:10.281020+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/puma-3.8.2/lib/puma/cluster.rb:391:in `run'
+2017-07-25T03:30:10.281020+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/puma-3.8.2/lib/puma/launcher.rb:172:in `run'
+2017-07-25T03:30:10.281021+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/puma-3.8.2/lib/puma/cli.rb:77:in `run'
+2017-07-25T03:30:10.281036+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/puma-3.8.2/bin/puma:10:in `<top (required)>'
+2017-07-25T03:30:10.281036+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/bin/puma:22:in `load'
+2017-07-25T03:30:10.281037+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/bin/puma:22:in `<top (required)>'
+2017-07-25T03:30:10.522313+00:00 heroku[web.1]: State changed from starting to crashed
+2017-07-25T03:30:10.507722+00:00 heroku[web.1]: Process exited with status 1
+2017-07-25T03:40:50.000000+00:00 app[api]: Build started by user internisti.jr@gmail.com
+2017-07-25T03:41:08.649682+00:00 app[api]: Deploy fcd56874 by user internisti.jr@gmail.com
+2017-07-25T03:41:08.649682+00:00 app[api]: Release v7 created by user internisti.jr@gmail.com
+2017-07-25T03:41:09.770034+00:00 heroku[web.1]: State changed from crashed to starting
+2017-07-25T03:40:50.000000+00:00 app[api]: Build succeeded
+2017-07-25T03:41:12.178634+00:00 heroku[web.1]: Starting process with command `bundle exec puma -C config/puma.rb`
+2017-07-25T03:41:14.597427+00:00 app[web.1]: [heroku-exec] Ready
+2017-07-25T03:41:15.113974+00:00 app[web.1]: [4] Puma starting in cluster mode...
+2017-07-25T03:41:15.114035+00:00 app[web.1]: [4] * Version 3.8.2 (ruby 2.4.1-p111), codename: Sassy Salamander
+2017-07-25T03:41:15.114061+00:00 app[web.1]: [4] * Min threads: 5, max threads: 5
+2017-07-25T03:41:15.114092+00:00 app[web.1]: [4] * Environment: production
+2017-07-25T03:41:15.114147+00:00 app[web.1]: [4] * Process workers: 2
+2017-07-25T03:41:15.114183+00:00 app[web.1]: [4] * Preloading application
+2017-07-25T03:41:16.057487+00:00 app[web.1]: [4] ! Unable to load application: NoMethodError: undefined method `new' for Statsd:Module
+2017-07-25T03:41:16.057624+00:00 app[web.1]: bundler: failed to load command: puma (/app/vendor/bundle/ruby/2.4.0/bin/puma)
+2017-07-25T03:41:16.057700+00:00 app[web.1]: NoMethodError: undefined method `new' for Statsd:Module
+2017-07-25T03:41:16.057701+00:00 app[web.1]:   /app/config/application.rb:15:in `<class:Application>'
+2017-07-25T03:41:16.057702+00:00 app[web.1]:   /app/config/application.rb:14:in `<module:RubyGettingStarted>'
+2017-07-25T03:41:16.057703+00:00 app[web.1]:   /app/config/application.rb:13:in `<top (required)>'
+2017-07-25T03:41:16.057704+00:00 app[web.1]:   /app/config/environment.rb:2:in `require'
+2017-07-25T03:41:16.057705+00:00 app[web.1]:   /app/config/environment.rb:2:in `<top (required)>'
+2017-07-25T03:41:16.057706+00:00 app[web.1]:   config.ru:3:in `require'
+2017-07-25T03:41:16.057706+00:00 app[web.1]:   config.ru:3:in `block in <main>'
+2017-07-25T03:41:16.057707+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/rack-1.6.5/lib/rack/builder.rb:55:in `instance_eval'
+2017-07-25T03:41:16.057708+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/rack-1.6.5/lib/rack/builder.rb:55:in `initialize'
+2017-07-25T03:41:16.057708+00:00 app[web.1]:   config.ru:in `new'
+2017-07-25T03:41:16.057709+00:00 app[web.1]:   config.ru:in `<main>'
+2017-07-25T03:41:16.057710+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/rack-1.6.5/lib/rack/builder.rb:49:in `eval'
+2017-07-25T03:41:16.057711+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/rack-1.6.5/lib/rack/builder.rb:49:in `new_from_string'
+2017-07-25T03:41:16.057711+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/rack-1.6.5/lib/rack/builder.rb:40:in `parse_file'
+2017-07-25T03:41:16.057712+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/puma-3.8.2/lib/puma/configuration.rb:313:in `load_rackup'
+2017-07-25T03:41:16.057713+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/puma-3.8.2/lib/puma/configuration.rb:242:in `app'
+2017-07-25T03:41:16.057714+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/puma-3.8.2/lib/puma/runner.rb:138:in `load_and_bind'
+2017-07-25T03:41:16.057714+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/puma-3.8.2/lib/puma/cluster.rb:391:in `run'
+2017-07-25T03:41:16.057715+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/puma-3.8.2/lib/puma/launcher.rb:172:in `run'
+2017-07-25T03:41:16.057716+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/puma-3.8.2/lib/puma/cli.rb:77:in `run'
+2017-07-25T03:41:16.057716+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/puma-3.8.2/bin/puma:10:in `<top (required)>'
+2017-07-25T03:41:16.057717+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/bin/puma:22:in `load'
+2017-07-25T03:41:16.057718+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/bin/puma:22:in `<top (required)>'
+2017-07-25T03:41:16.223573+00:00 heroku[web.1]: Process exited with status 1
+2017-07-25T03:41:16.239227+00:00 heroku[web.1]: State changed from starting to crashed
+2017-07-25T03:41:16.241918+00:00 heroku[web.1]: State changed from crashed to starting
+2017-07-25T03:41:19.943181+00:00 heroku[web.1]: Starting process with command `bundle exec puma -C config/puma.rb`
+2017-07-25T03:41:23.294331+00:00 app[web.1]: [heroku-exec] Ready
+2017-07-25T03:41:24.309968+00:00 app[web.1]: [4] Puma starting in cluster mode...
+2017-07-25T03:41:24.309984+00:00 app[web.1]: [4] * Version 3.8.2 (ruby 2.4.1-p111), codename: Sassy Salamander
+2017-07-25T03:41:24.309998+00:00 app[web.1]: [4] * Min threads: 5, max threads: 5
+2017-07-25T03:41:24.310001+00:00 app[web.1]: [4] * Environment: production
+2017-07-25T03:41:24.310018+00:00 app[web.1]: [4] * Process workers: 2
+2017-07-25T03:41:24.310035+00:00 app[web.1]: [4] * Preloading application
+2017-07-25T03:41:26.166909+00:00 app[web.1]: [4] ! Unable to load application: NoMethodError: undefined method `new' for Statsd:Module
+2017-07-25T03:41:26.167023+00:00 app[web.1]: bundler: failed to load command: puma (/app/vendor/bundle/ruby/2.4.0/bin/puma)
+2017-07-25T03:41:26.167108+00:00 app[web.1]: NoMethodError: undefined method `new' for Statsd:Module
+2017-07-25T03:41:26.167109+00:00 app[web.1]:   /app/config/application.rb:15:in `<class:Application>'
+2017-07-25T03:41:26.167110+00:00 app[web.1]:   /app/config/application.rb:14:in `<module:RubyGettingStarted>'
+2017-07-25T03:41:26.167111+00:00 app[web.1]:   /app/config/application.rb:13:in `<top (required)>'
+2017-07-25T03:41:26.167112+00:00 app[web.1]:   /app/config/environment.rb:2:in `require'
+2017-07-25T03:41:26.167112+00:00 app[web.1]:   /app/config/environment.rb:2:in `<top (required)>'
+2017-07-25T03:41:26.167113+00:00 app[web.1]:   config.ru:3:in `require'
+2017-07-25T03:41:26.167114+00:00 app[web.1]:   config.ru:3:in `block in <main>'
+2017-07-25T03:41:26.167115+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/rack-1.6.5/lib/rack/builder.rb:55:in `instance_eval'
+2017-07-25T03:41:26.167115+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/rack-1.6.5/lib/rack/builder.rb:55:in `initialize'
+2017-07-25T03:41:26.167116+00:00 app[web.1]:   config.ru:in `new'
+2017-07-25T03:41:26.167117+00:00 app[web.1]:   config.ru:in `<main>'
+2017-07-25T03:41:26.167117+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/rack-1.6.5/lib/rack/builder.rb:49:in `eval'
+2017-07-25T03:41:26.167118+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/rack-1.6.5/lib/rack/builder.rb:49:in `new_from_string'
+2017-07-25T03:41:26.167118+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/rack-1.6.5/lib/rack/builder.rb:40:in `parse_file'
+2017-07-25T03:41:26.167119+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/puma-3.8.2/lib/puma/configuration.rb:313:in `load_rackup'
+2017-07-25T03:41:26.167120+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/puma-3.8.2/lib/puma/configuration.rb:242:in `app'
+2017-07-25T03:41:26.167120+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/puma-3.8.2/lib/puma/runner.rb:138:in `load_and_bind'
+2017-07-25T03:41:26.167121+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/puma-3.8.2/lib/puma/cluster.rb:391:in `run'
+2017-07-25T03:41:26.167121+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/puma-3.8.2/lib/puma/launcher.rb:172:in `run'
+2017-07-25T03:41:26.167122+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/puma-3.8.2/lib/puma/cli.rb:77:in `run'
+2017-07-25T03:41:26.167123+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/gems/puma-3.8.2/bin/puma:10:in `<top (required)>'
+2017-07-25T03:41:26.167123+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/bin/puma:22:in `load'
+2017-07-25T03:41:26.167124+00:00 app[web.1]:   /app/vendor/bundle/ruby/2.4.0/bin/puma:22:in `<top (required)>'
+2017-07-25T03:41:26.434923+00:00 heroku[web.1]: Process exited with status 1
+2017-07-25T03:41:26.452324+00:00 heroku[web.1]: State changed from starting to crashed
+2017-07-25T03:41:26.875089+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=young-dawn-26741.herokuapp.com request_id=c98723eb-dc5b-4a5a-8523-64f99afcba3e fwd="118.136.246.87" dyno= connect= service= status=503 bytes= protocol=https
