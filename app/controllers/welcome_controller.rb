@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
-
+  layout "index"
   # GET /welcome
   def index
     @foos = []
