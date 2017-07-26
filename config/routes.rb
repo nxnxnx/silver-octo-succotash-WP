@@ -13,6 +13,39 @@ Rails.application.routes.draw do
   get "expensive"    => "welcome#expensive_query"
   get "make_objects" => "welcome#make_objects"
 
+=begin #beginning of the comment
+  scope path: '/career', controller: 'career' do
+	  get 'ladder' => :ladder
+	  get 'development' => :development
+	  get 'path' => :path
+	  get 'counselling' => :counselling
+  end
+
+  scope path: '/job', controller: 'job' do
+	  get 'internship' => :internship
+	  get 'part-time' => :part-time
+	  get 'full-time' => :full-time
+	  get 'exchange' => :exchange
+  end
+
+  scope path: '/events', controller: 'events' do
+    get 'fairs' => :fairs
+    get 'workshop' => :workshop
+  end
+
+  scope path: '/students', controller: 'students' do
+    get '/lists' => :lists
+    get '/news' => :news
+    get '/publication' => :publication
+  end
+
+  scope path: '/alumni', controller: 'alumni' do
+    get 'events' => :events
+    get 'networking' => :networking
+    get 'reunions' => :reunions
+  end
+=end #end of the comment
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
