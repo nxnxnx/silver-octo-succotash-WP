@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  devise_for :users
+  #devise generated
+  devise_for :admins
+
   resources :bars
   resources :foos
   resources :widgets
