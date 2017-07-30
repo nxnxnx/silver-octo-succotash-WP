@@ -1,8 +1,13 @@
-<nav class="navbar navbar-default navbar-static-top">
-	<ul class="nav navbar-nav">
-		<li><%= link_to "home", root_path %></li>
-		<li><%= link_to "path to foo controller", foos_path %></li>
-		<li><%= link_to "path to bar controller", bars_path %></li>
-	</ul>
-</nav>
-
+<div class="header-container">
+	<header>
+		<nav class="navbar navbar-default navbar-static-top">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="col-sm-2"><%= link_to "home", root_path %></li></div>
+					<div class="col-sm-2"><%= link_to "path to foo controller", foos_path %></div>
+					<div class="col-sm-2"><%= link_to "path to bar controller", bars_path %></div>
+				</div>
+			</div>
+		</nav>
+	</header>
+</div>
